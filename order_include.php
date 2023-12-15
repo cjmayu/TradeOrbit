@@ -36,7 +36,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $address = 'taiwan, taipei';
         $orderTime = date('Y-m-d H:i:s'); // Current date and time
 
-        try{
         // Begin a transaction
         $pdo->beginTransaction();
 
@@ -80,10 +79,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $stmtOrderInclude->bindParam(':product_count', $product_count, PDO::PARAM_INT);
             $stmtOrderInclude->execute();
         }
-        // Commit the transaction
-        $pdo->commit();
-        echo 'Order placed successfully!','<br>' ;
-        $pdo->beginTransaction();
+
+
                 // Begin a transaction
 
             $sql = "UPDATE Add_to_cart
@@ -97,24 +94,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $stmt->bindParam(':userid', $userid, PDO::PARAM_INT);
                 $stmt->bindParam(':productid', $productid, PDO::PARAM_INT);
                 $stmt->execute();
-                $pdo->commit();
             }
-        } catch (PDOException $e){
-            $pdo->rollBack();
-            die('Update failed: ' . $e->getMessage());
-        }
-        
-
+                    // Commit the transaction
+        echo 'Order placed successfully!','<br>' ;
+        $pdo->commit();
         // Commit the transaction
-        
         echo 'Order_include placed successfully!','<br>' ;
         header("Location: myorder.php");
 
     } catch (PDOException $e) {
         // Handle database connection errors
         $pdo->rollBack();
-        echo 'Error: ' . $e->getMessage();
-    } finally {
+        echo 'Update failed: ' . $e->getMessage();
+    } 
+    finally {
         // Close the database connection
         $pdo = null;
     }
