@@ -102,7 +102,7 @@ Navigate to **`login.php`**, use email: "hector60@gmail.com" and password "(%Nb!
 
 ### **Database Performance**
 
-To improve performance, create indexes on the **`product`** tables for the **`productid`** column, the **`product`** tables for the **`product_name`** column** and **`comment`** table for the **`productid`** and **`star`** columns.
+To improve performance, create indexes on the **`product`** tables for the **`productid`** column, the **`product`** tables for the **`product_name`** column and **`comment`** table for the **`productid`** and **`star`** columns.
 
 
 
