@@ -27,6 +27,8 @@ the system.
 - **`admin_see_user.php`**: The interface for administrator to get or delete the users' information.
 - **`admin_view_store.php`**: The interface for administrator to get or delete individual user's store.
 - **`style1.css`**: Contains the CSS styles for the project's frontend.
+- **`emptycart.jpg`**: Picture of empty cart.
+- **`profile.jpg`**: Picture of empty profile.
 
 ## **Installation and Setup**
 
