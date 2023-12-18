@@ -51,13 +51,13 @@ Install Composer from the [official website](https://getcomposer.org/download/).
 
 ### **Step 4: Project Deployment**
 
-Unzip the provided project archive into the **`htdocs`** directory of XAMPP.
+Download all files here as .zip and unzip the .zip file archive into the **`htdocs`** directory of XAMPP.
 
 ### **Step 5: Composer Dependencies**
 
 Open your system console, navigate to the project folder, and execute **`composer install`** to install the required PHP packages, including Eloquent ORM. 
 
-### **Step 6: Database Configuration** (skip this step if you have done so before)
+### **Step 6: Database Configuration**
 
 Please go to https://drive.google.com/file/d/172TFT-MzRx7qM1immb1UVEFOu_olat6m/view?usp=sharing to download the sql file.
 Create a PostgreSQL database named **`TradeOrbit`**. Import the provided **`.sql`** file to populate your database with the necessary tables and data.
