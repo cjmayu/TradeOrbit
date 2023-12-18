@@ -98,7 +98,7 @@ Navigate to **`register.php`** for register an account and **`login.php`** for l
 
 ### **Admin Interface**
 
-Navigate to **`login.php`**, use email: "hector60@gmail.com" and password "(%Nb!6Awl9" to log in the system as an admini.
+Navigate to **`login.php`**, use email: "hector60@gmail.com" and password "(%Nb!6Awl9" to log in the system as an admin.
 
 ### **Database Performance**
 
