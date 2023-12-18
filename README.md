@@ -1,5 +1,5 @@
 # **TradeOrbit System**
-> **NTUIM 112-1 Database Management Demo**
+> **NTUIM 112-1 Database Management Fianl Project | Group 4**
 
 ## File Structure
 
